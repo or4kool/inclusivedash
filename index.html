@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Inclusive | Dashbaord</title>
+
+	<link href="img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+<link href="css/lib/charts-c3js/c3.min.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="css/lib/lobipanel/lobipanel.min.css">
+<link rel="stylesheet" href="css/separate/vendor/lobipanel.min.css">
+<link rel="stylesheet" href="css/lib/jqueryui/jquery-ui.min.css">
+<link rel="stylesheet" href="css/separate/pages/widgets.min.css">
+    <link rel="stylesheet" href="css/lib/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="with-side-menu dark-theme dark-theme-blue">
+
+	<header class="site-header">
+	    <div class="container-fluid">
+	        <a href="#" class="site-logo-text">Inclusive</a>
+	        <button class="hamburger hamburger--htla">
+	            <span>toggle menu</span>
+	        </button>
+	        <div class="site-header-content">
+	            <div class="site-header-content-in">
+	                <div class="site-header-shown">
+	                    <div class="dropdown dropdown-notification notif">
+	                        <a href="#"
+	                           class="header-alarm dropdown-toggle active"
+	                           id="dd-notification"
+	                           data-toggle="dropdown"
+	                           aria-haspopup="true"
+	                           aria-expanded="false">
+	                            <i class="font-icon-alarm"></i>
+	                        </a>
+	                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-notif" aria-labelledby="dd-notification">
+	                            <div class="dropdown-menu-notif-header">
+	                                Notifications
+	                                <span class="label label-pill label-danger">4</span>
+	                            </div>
+	                            <div class="dropdown-menu-notif-list">
+	                                <div class="dropdown-menu-notif-item">
+	                                    <div class="photo">
+	                                        <img src="img/photo-64-1.jpg" alt="">
+	                                    </div>
+	                                    <div class="dot"></div>
+	                                    <a href="#">Morgan</a> was bothering about something
+	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
+	                                </div>
+	                                <div class="dropdown-menu-notif-item">
+	                                    <div class="photo">
+	                                        <img src="img/photo-64-2.jpg" alt="">
+	                                    </div>
+	                                    <div class="dot"></div>
+	                                    <a href="#">Lioneli</a> had commented on this <a href="#">Super Important Thing</a>
+	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
+	                                </div>
+	                                <div class="dropdown-menu-notif-item">
+	                                    <div class="photo">
+	                                        <img src="img/photo-64-3.jpg" alt="">
+	                                    </div>
+	                                    <div class="dot"></div>
+	                                    <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
+	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
+	                                </div>
+	                                <div class="dropdown-menu-notif-item">
+	                                    <div class="photo">
+	                                        <img src="img/photo-64-4.jpg" alt="">
+	                                    </div>
+	                                    <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to see <a href="#">This Movie</a>
+	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
+	                                </div>
+	                            </div>
+	                            <div class="dropdown-menu-notif-more">
+	                                <a href="#">See more</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	
+	                    <div class="dropdown user-menu">
+	                        <button class="dropdown-toggle" id="dd-user-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                            <img src="img/avatar-2-64.png" alt="">
+	                        </button>
+	                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
+	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>
+	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Settings</a>
+	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-question-sign"></span>Help</a>
+	                            <div class="dropdown-divider"></div>
+	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-log-out"></span>Logout</a>
+	                        </div>
+	                    </div>
+	
+	                    <button type="button" class="burger-right">
+	                        <i class="font-icon-menu-addl"></i>
+	                    </button>
+	                </div><!--.site-header-shown-->
+	
+	                <div class="mobile-menu-right-overlay"></div>
+	                <div class="site-header-collapsed">
+	                    <div class="site-header-collapsed-in">
+	                        
+	                    </div><!--.site-header-collapsed-in-->
+	                </div><!--.site-header-collapsed-->
+	            </div><!--site-header-content-in-->
+	        </div><!--.site-header-content-->
+	    </div><!--.container-fluid-->
+	</header><!--.site-header-->
+
+	<div class="mobile-menu-left-overlay"></div>
+	<nav class="side-menu">
+	    <div class="side-menu-avatar">
+	        <div class="avatar-preview avatar-preview-100">
+	            <img src="img/avatar-1-256.png" alt="">
+	        </div>
+	        <div class="welcomer">
+	        	<p>Welcome, Nana</p>
+	        </div>
+	    </div>
+	    <ul class="side-menu-list">
+	        <li class="brown opened">
+	            <a href="index.html">
+	                <i class="font-icon font-icon-home"></i>
+	                <span class="lbl">Home</span>
+	            </a>
+	        </li>
+	        <li class="green">
+	            <a href="support.html">
+	                <i class="font-icon font-icon-snippet"></i>
+	                <span class="lbl">Support</span>
+	            </a>
+	        </li>
+	        <li class="gold">
+	            <a href="#">
+	                <i class="font-icon font-icon-lamp"></i>
+	                <span class="lbl">Search</span>
+	            </a>
+	        </li>
+	        <li class="blue">
+	            <a href="#">
+	                <i class="font-icon font-icon-speed"></i>
+	                <span class="lbl">Data Presentation</span>
+	            </a>
+	        </li>
+	        <li class="purple">
+	            <span>
+	                <i class="font-icon font-icon-cogwheel"></i>
+	                <span class="lbl">Configuratoin</span>
+	            </span>
+	        </li>
+	    </ul>
+	</nav><!--.side-menu-->
+
+	<div class="page-content">
+	    <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-lg-4">
+	                <section class="card donut-card">
+	                    <header class="card-header">
+	                        Banks
+	                    </header>
+	                    <div class="card-block">
+	                        <div id="donut-chart"></div>
+	                    </div>
+	                </section>
+	            </div><!--.col-->
+	            <div class="col-xl-8">
+	                <div class="row">
+	                    <div class="col-sm-6">
+	                        <article class="statistic-box red">
+	                            <div>
+	                                <div class="number">3,500</div>
+	                                <div class="caption"><div>Total Verified Users</div></div>
+	                                <div class="percent">
+	                                    <div class="arrow up"></div>
+	                                    <p>15%</p>
+	                                </div>
+	                            </div>
+	                        </article>
+	                    </div><!--.col-->
+	                    <div class="col-sm-6">
+	                        <article class="statistic-box purple">
+	                            <div>
+	                                <div class="number">120.5s</div>
+	                                <div class="caption"><div>Average Verified Time</div></div>
+	                                <div class="percent">
+	                                    <div class="arrow down"></div>
+	                                    <p>3%</p>
+	                                </div>
+	                            </div>
+	                        </article>
+	                    </div><!--.col-->
+	                    <div class="col-sm-6">
+	                        <article class="statistic-box yellow">
+	                            <div>
+	                                <div class="number">10,302</div>
+	                                <div class="caption"><div>Total Verified Males</div></div>
+	                                <div class="percent">
+	                                    <div class="arrow down"></div>
+	                                    <p>5%</p>
+	                                </div>
+	                            </div>
+	                        </article>
+	                    </div><!--.col-->
+	                    <div class="col-sm-6">
+	                        <article class="statistic-box green">
+	                            <div>
+	                                <div class="number">29,988</div>
+	                                <div class="caption"><div>Total Verified Females</div></div>
+	                                <div class="percent">
+	                                    <div class="arrow up"></div>
+	                                    <p>84%</p>
+	                                </div>
+	                            </div>
+	                        </article>
+	                    </div><!--.col-->
+	                </div><!--.row-->
+	            </div><!--.col-->
+	        </div><!--.row-->
+	
+	        <div class="row">
+	        	<div class="col-xs-12">
+	        		<section class="card">
+			            <header class="card-header">
+			                Verification Activities
+			            </header>
+			            <div class="card-block">
+			                <div id="area-chart"></div>
+			            </div>
+			        </section>
+	        	</div>
+	        </div>
+	    </div><!--.container-fluid-->
+	</div><!--.page-content-->
+
+	<script src="js/lib/jquery/jquery.min.js"></script>
+<script src="js/lib/tether/tether.min.js"></script>
+<script src="js/lib/bootstrap/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+
+<script src="js/lib/d3/d3.min.js"></script>
+<script src="js/lib/charts-c3js/c3.min.js"></script>
+<script src="js/lib/charts-c3js/c3js-init.js"></script>
+
+<script src="js/app.js"></script>
+</body>
+</html>
