@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+    <title> inclusive signup! </title>
+    <meta name=viewport content="width=device-width, initial-scale=1"> 
+    
+</head>
+
+<style>
+    html{color:#3d556b;font-family:Helvetica, Arial, sans-serif;background:#f9fafb;font-size:14px;font-weight:400;line-height:24px;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;width:100%;height:100%}
+    .has-error .error-block {
+        display: block;
+        color: #e365a6;
+        transition: all .2s ease-in-out;
+        margin-top: 10px;
+        margin-bottom: -5px;
+        line-height: 21px;
+    }
+
+    .main {
+      margin-bottom: 10px;
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+      padding-top: 2rem;
+  }
+
+  .login-container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #dae4ed;
+    border-radius: 5px;
+}
+
+@media all and (max-width: 480px) {.login-container {width:360px;}}
+.logo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    left: calc(50% - 90px / 2);
+    top: -77px;
+    width: 90px;
+    height: 90px;
+    transform: rotate(45deg) scale(.7);
+    border: 1px solid #dae4ed;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-radius: 100%;
+    background: #f9fafb;
+}
+
+.tc {text-align: center}
+
+.logo img {
+  height: 56px;
+  transform: rotate(-45deg) translateX(1px);
+}
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input:focus, input:hover {
+    border-color: #49b882;
+    outline: none;
+}
+
+.form-group:not(:first-child) {
+    padding-top: 1rem;
+}
+
+.name_group, .checkbox_group {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.name_flex {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: none;
+}
+
+select {
+    height: 38px;
+    cursor: pointer;
+}
+
+
+.form-control {
+    background: #fff;
+    color: #425e78;
+    border: 1px solid #dae4ed;
+    padding: 9px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.control-label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #00386c;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.checkbox:not(:first-child), .name:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.ui-Button {
+    background-color: #49b882;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .2s;
+    transition-property: background-color,color,box-shadow,opacity;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.ui-Button[data-extras*=fluid] {
+    width: 100%;
+}
+
+.ui-Button:active, .ui-Button:focus, .ui-Button:hover {
+    background-color: #54d194;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.ActionText-text {
+    color: #425e78;
+}
+
+.Link {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    color: #49b882;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Link:focus, .Link:hover, a:active, a:hover {
+    color: #54d194;
+    outline: none;
+}
+
+</style>
+
+<body>
+    <main>
+
+        <div data-reactroot="" class="login-container">
+            <header class="main">
+                <div class="logo"><img src="body_assets/icons/logo_standalone.svg" alt="inclusive"></div>
+                <h3>Create your Inclusive Account</h3>
+                <p class="tc">Have account already? <a class="Link Link--underline rightArrow" href="login.html">Log In</a></p>
+
+            </header>
+
+            <div class="LoginForm">
+              <div class="">
+                <form>
+                    <fieldset class="fieldset fieldset-depth-0">
+                        <div class="form-group form-group-depth-1 form-group-email">
+                            <label for="" class="control-label">Email</label>
+                            <input type="email" required="" id="" name="email" class="form-control" value="">
+                        </div>
+
+                        <div class="form-group name_group">
+                            <div class="name">
+                                <div class="form-group form-group-depth-1 form-group-first_name"><label for="" class="control-label">First name</label><input type="text" placeholder="Dela" id="" name="first_name" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="name">
+                                <div class="form-group form-group-depth-1 form-group-last_name">
+                                    <label for="" class="control-label">Last name</label><input type="text" placeholder="Paul" id="" name="last_name" class="form-control" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-depth-1 form-group-password">     
+                            <label for="" class="control-label">Password</label>
+                            <input type="password" required="" id="" name="password" class="form-control" value="">
+                        </div>
+
+                        <div class="form-group form-group-depth-1 form-group-is_company">
+                            <label for="" class="control-label">Who are you creating an account for?</label>
+                            <div class="checkbox_group">
+                                <div class="checkbox">
+                                    <label for=""><input type="radio" id="" name="" value="false"> Individual</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for=""><input type="radio" id="" name="is_company" value="true"> Company</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-group form-group-depth-1 form-group-company_size">
+                                <label for="" class="control-label">Company size</label>
+                                <select id="" name="company_size" class="form-control">
+                                    <option value="">Select a company size</option>
+                                    <option value="1-5 employees">1-5 employees</option>
+                                    <option value="5-10 employees">5-10 employees</option>
+                                    <option value="10-50 employees">10-50 employees</option>
+                                    <option value="50-100 employees">50-100 employees</option>
+                                    <option value="100-1000 employees">100-1000 employees</option>
+                                    <option value="1000+ employees">1000+ employees</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <div class="Space Space--vertical" style="height: 30px;"></div>
+                    <button data-extras="fluid" class="ui-Button" type="submit">next</button>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <footer class="footer">
+           <div class="ActionText">
+            <p class="ActionText-text">Clicking next up signifies you've read and agree to our <a class="Link" href="">terms and conditions</a></p>
+        </div>
+    </footer>
+</div>
+</main>
+
+
+
+
+
+
+
+</body>
+</html>
+
