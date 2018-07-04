@@ -669,7 +669,9 @@ a:focus {
 .nonInclusiveLogo[data-company="ecobank"] {
     background-image: url(body_assets/non_inclusive_icons/ecobank-logo.png)
 }
-
+.nonInclusiveLogo[data-company="billandbelinda"] {
+    background-image: url(body_assets/non_inclusive_icons/billandbelinda.png)
+}
 
 .CustomerQuote {
     -ms-flex-align: center;
@@ -771,7 +773,7 @@ a:focus {
 }
 
 .trusted-logos .ph4-ns{
-    padding-left: 1rem;
+    padding-left: 10px;
     padding-right: 1rem;
 }
 
